@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600;1,700;1,800;1,900&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+  h3 {
+    color: #fff;
+  }
+
+  button {
+    background-color: #fff;
+    border: 0;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .game-container {
+    width: 460px;
+    height: 460px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    display: grid;
+    border-radius: 8px;
+    grid-template-columns: auto auto auto auto;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    .card {
+      flex-wrap: wrap;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid #000;
+      margin: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+      img {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+      }
+    }
+  }
+}

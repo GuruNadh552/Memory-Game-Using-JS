@@ -1,0 +1,13 @@
+<div class="container">
+  <button (click)="newGame()" *ngIf="isStart else gameBoard">Start Game</button>
+  <ng-template #gameBoard>
+      <h3>Moves : {{moves}}</h3>
+    <div class="game-container">
+      <div class="card" *ngFor="let i of gameIcons;let j=index">
+          <img src="assets/{{i.id}}.png" *ngIf="i.match">
+          <img src="assets/13.png" *ngIf="!i.match" (click)="changeView(j)">
+      </div>
+    </div>
+    <button (click)="newGame()">Stop Game</button>
+  </ng-template>
+</div>
